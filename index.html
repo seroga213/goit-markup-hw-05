@@ -20,7 +20,7 @@
         <nav class="header-nav nav"> 
             <a class="logo-header link" href="./index.html">Web<span class="header-logo-black">Studio</span></a>
             <ul  class="list header-nav-list">
-                <li class="header-nav-item"><a class="header-nav-link link current" href="./index.html">Студия</a></li>
+                <li class="header-nav-item"><a class="header-nav-link link current active-link" href="./index.html">Студия</a></li>
                 <li class="header-nav-item"><a class="header-nav-link link" href="./portfolio.html">Портфолио</a></li>
                 <li class="header-nav-item"><a class="header-nav-link link" href="">Контакты</a></li>
             </ul>
@@ -50,8 +50,8 @@
             <h1 class="hero-title">
                 Эффективные решения<br />
                 для вашего бизнеса
-              </h1>   
-            <button type="button" class="hero-btn">Заказать услугу</button>
+               </h1>   
+            <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
         </section>
 
         <!-- Наши особенности -->
@@ -109,6 +109,9 @@
                      alt="разработка программного обеспечения"
                      width="370"
                     />
+                    <h3 class="about-us-title specialization-title">
+                      Десктопные приложения
+                    </h3>
                 </li>
                 <li class="product-li">
                     <img class="photo-about-we"
@@ -116,6 +119,9 @@
                     alt="разработка мобильных приложений"
                     width="370"
                     />
+                    <h3 class="about-us-title specialization-title">
+                      Мобильные приложения
+                    </h3>
                 </li>
                 <li class="product-li">
                     <img class="photo-about-we"
@@ -123,6 +129,9 @@
                     alt="подбор цветной гаммы"
                     width="370"
                     />
+                  <h3 class="about-us-title specialization-title">
+                Дизайнерские решения
+                  </h3>
                 </li>
             </ul>
             </div>
@@ -398,6 +407,15 @@
       </div>
     </div>
     </footer>
-    
+    <div class="btn-js is-hidden" data-modal>
+      <div class="hero-button">
+        <button type="button" class="button-close" data-modal-close>
+          <svg width="11px" height="11px">
+            <use href="./images/Vector.svg"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
