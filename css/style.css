@@ -223,7 +223,7 @@
     border-radius: 4px;
     border: none;
     min-height: 38px;
-    transition: color var(--transition); background-color: var(--transition); box-shadow: var(--transition);
+    transition: color var(--transition), background-color var(--transition), box-shadow var(--transition);
   }
  
   .filter-list{
@@ -585,7 +585,7 @@
   justify-content: center;
   align-items: center;
   height: 92px;
-  transition: border var(--transition) 
+  transition: color var(--transition) 
 }
 
 .client-icon {
@@ -682,7 +682,7 @@
     margin-right: 10px;
 }
   .social-links {
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     width: 44px;
     height: 44px;
     display: flex;
@@ -690,8 +690,7 @@
     align-items: center;
     border-radius: 50%;
     color:var(--icons-color);
-    transition: color var(--transition); background-color: var (--transition)
-  }
+    transition: color var(--transition), background-color var(--transition) }
   .social-icons {
     fill: currentColor;
   }
